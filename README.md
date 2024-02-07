@@ -84,7 +84,7 @@
 
 - 工作：Android 应用程序开发，从事问题定义 → 需求分析 → 架构设计 → 构建 → 测试 → 改进
 - 运动：跑步、游泳、健身、徒步
-- 阅读：村上春树（Haruki Murakami）、陀思妥耶夫斯基（Fyodor Dostoevsky）、莫言、余华、威廉·萨默塞特·毛姆（William Somerset Maugham)、斯蒂芬·茨威格（Stefan Zweig）、海明威（Ernest Hemingway）
-- 纪录片：玄奘之路、河西走廊、大明宫、风云战国之列国、千古风流人物
+- 喜欢的作家：村上春树（Haruki Murakami）、陀思妥耶夫斯基（Fyodor Dostoevsky）、莫言、余华、威廉·萨默塞特·毛姆（William Somerset Maugham)、斯蒂芬·茨威格（Stefan Zweig）、海明威（Ernest Hemingway）
+- 喜欢的纪录片：玄奘之路、河西走廊、大明宫、风云战国之列国、千古风流人物
 
   
