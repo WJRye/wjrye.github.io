@@ -25,12 +25,13 @@ description: Android developer who earns a living by creating bugs.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wjrye.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  WJRye
+markdown_ext:  "markdown,mkdown,mkdn,mkd,md"
 
 
 # Build settings
 # theme: minima
-# plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -40,14 +41,14 @@ github_username:  WJRye
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
