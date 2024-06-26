@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: simple
 title: Family
 description: 添加一些家庭记录
 keywords: 家庭

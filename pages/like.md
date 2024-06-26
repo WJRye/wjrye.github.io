@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: simple
 title: Like
 description: "Running"
 keywords: 书籍, 电影，音乐，徒步，跑步，健身
