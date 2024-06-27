@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ADB 常用命令
-categories: [ADB,SHELL]
+categories: [SHELL]
 description: ADB 常用命令
 keywords: ADB, SHELL
 mermaid: false
