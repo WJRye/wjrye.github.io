@@ -118,11 +118,11 @@ subscribe_rss: /feed.xml
 index:
     banner:
         # 首页 banner 区文字颜色
-        color: "#333333"
+        color: "#FFFFFF"
         # 首页导航栏文字颜色
-        nav-color: "#333333"
+        nav-color: "#FFFFFF"
         # 首页 banner 区背景颜色
-        background-color: "#F2F2F2"
+        background-color: "#003366"
         # 首页 banner 区背景图片
         # background-image: "/assets/images/octicons-bg.png"
         # background-repeat: "no-repeat"
