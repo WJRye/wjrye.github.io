@@ -139,7 +139,7 @@ public fun <T> Iterator<T>.asSequence(): Sequence<T> = Sequence { this }.constra
 ## 序列中间和末端操作
 序列操作分为两类：中间的和末端的。一次中间操作返回的是另一个序列，这个新序列知道如何变换原始序列中的元素。而一次末端返回的是一个**结果**，这个结果可能是集合、元素、数字，或者其他从初始集合的变换序列中获取的任意对象。
 
-<img src="/images/posts/2023-01-03-Kotlin-Sequence-Intro-p1.awebp" width="75%" />
+![](/images/posts/2023-01-03-Kotlin-Sequence-Intro/p1.png)
 
 中间操作始终是**惰性**的。
 
