@@ -621,7 +621,7 @@ USAGE: gradlew [option...] [task...]
 
 执行完后，会输出一个 html  格式的报告文档：
 
-![loading-ag-501](/images/posts/2023-11-16-Gradle-Intro/p1.jpeg)
+![loading-ag-501](/images/posts/2023-11-16-Gradle-Intro/p1.webp)
 在这个报告文档中，有每一个任务的执行时长明细，这对优化构建时间非常有用。
 
 备注：优化构建时间，对于开发来说，是首要的事情，因为开发每天花费时间最多的就是构建应用程序。
@@ -693,7 +693,7 @@ info 信息包含构建时，所有 task 相关的信息，这有助于排查构
  `Task :app:dependencies` 或 `Task :app:androidDependencies` 可以输出项目依赖的 aar 信息，但要输出项目依赖的 so 信息，并没有相关的 task 或者构建选项可以直接使用。
 
 在 apk 产物中，项目依赖的本地或三方 so 都会放在 lib 文件夹下面：
-![在这里插入图片描述](/images/posts/2023-11-16-Gradle-Intro/p2.jpeg)
+![在这里插入图片描述](/images/posts/2023-11-16-Gradle-Intro/p2.webp)
 另外，构建 apk 时，打包 res 资源文件、处理 .aidl 文件、生成 .class 文件等都有相关的 task 相对应。那么，将 so 都放到 lib 文件下面，可以猜测也应该有相关的 task 相对应。
 
 在构建项目时 `./gradlew :app:assembleDebug --console=plain`：
