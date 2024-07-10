@@ -1,0 +1,170 @@
+---
+layout: post
+title: FFMpeg 音视频操作命令
+categories: [SHELL]
+description: ffmpeg 操作命令介绍。
+keywords: FFMPEG
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
+---
+
+如果没有安装ffmpeg，请参考：[Mac 配置FFmpeg环境](https://www.jianshu.com/p/627b2d462151)
+
+FFmpeg官网：[FFmpeg](https://ffmpeg.org/)
+
+GitHub FFmpeg-Android-Java：[FFmpeg-Android-Java](https://github.com/WritingMinds/ffmpeg-android-java)
+
+---
+
+## 命令参数
+
+可以通过命令帮助查看：
+
+```
+ffmpeg -h
+```
+
+### 全局选项：
+
+- -y：覆盖输出文件
+- -n：永远不会覆盖输出文件
+- -ignore_unknown：忽略未知的流类型
+- stats：编码期间打印进度报告
+- -vol volume：改变音量（256 =正常）
+
+### 每个文件的主要选项：
+
+- -f fmt：强制格式，设置输出格式
+
+- -c codec 或者 -codec codec ：编解码器名称
+
+- -pre preset ：预设名称
+
+- -map_metadata outfile[,metadata]:infile[,metadata]：从infile设置outfile的元数据信息
+
+- -t duration ：记录或转码音频/视频的“持续时间”秒
+
+- -to time_stop：记录或转码停止时间
+
+- -fs limit_size：设置限制文件大小，以字节为单位，超过指定的文件大小时则结束转换
+
+- -ss time_off：设置开始时间偏移量，从指定时间开始转换
+
+- -sseof time_off：设置相对于EOF的开始时间偏移
+
+- -seek_timestamp：使用-ss通过时间戳启用/禁用搜索
+
+- -timestamp time：设置录制时间戳（'now'设置当前时间）
+
+- -metadata string=string：添加元数据
+
+- -program title=string:st=number...：使用指定的流添加程序
+
+- -target type ：指定目标文件类型（“vcd”，“svcd”，“dvd”，“dv”或“dv50”，带有可选前缀“pal-”，“ntsc-”或“film-”）
+
+- -apad：audio pad
+
+- -frames number：设置要输出的帧数
+
+- -filter filter_graph：设置流过滤器图
+
+- -filter_script filename：从文件中读取流过滤器图形描述
+
+- -reinit_filter：在输入参数更改时重新启动filtergraph
+
+- -discard：丢弃
+
+- -disposition ：规定
+
+- -i：设置输入文件名
+
+- -title：设置标题
+
+- -vsync：增减Frame使影音同步
+
+### 视频选项：
+
+- -vframes number：设置要输出的视频帧数
+- -r rate：设置帧速率（Hz值，分数或缩写）
+- -s size ：设置帧大小（W x H或缩写）
+- -aspect aspect：设置纵横比（4：3,16：9或1.3333,1.77777）
+- -bits_per_raw_sample number：设置每个原始样本的位数
+- -vn：禁用视频
+- -vcodec codec：强制视频编解码器（'复制'复制流）
+- -timecode hh:mm:ss[:;.]ff：设置初始TimeCode值
+- -pass n ：选择密码（1到3）
+- -vf filter_graph：设置视频过滤器
+- -ab bitrate：音频比特率（请使用-b:a）
+- -b bitrate：视频比特率（请使用-b：v）
+- -dn：禁用数据
+
+### 声音选项：
+
+- -aframes number：设置要输出的音频帧数
+- -aq quality ：设置音频质量（特定于编解码器）
+- -ar rate：设置音频采样率（Hz）
+- -ac channels ：设置音频通道数
+- -an：禁用音频
+- -acodec codec：强制音频编解码器（'复制'到复制流）
+- -vol volume ：改变音量（256 =正常）
+- -af filter_graph：设置音频过滤器
+
+### 字幕选项：
+
+- -s size：设置帧大小（W x H或缩写）
+- -sn：禁用字幕
+- -scodec codec ：强制字幕编解码器（'复制'复制流）
+- -stag fourcc/tag：强制字幕标签/ fourcc
+- -fix_sub_duration：修复字幕持续时间
+- -canvas_size size：设置画布大小（W x H或缩写）
+- -spre preset：将字幕选项设置为指定的预设
+
+---
+
+## 操作视频
+
+视频裁剪：
+
+```
+ffmpeg -i src.mp4  -ss 00:00:00 -t 00:00:20 des.mp4
+裁剪前20秒
+```
+
+视频去掉声音：
+
+```
+ffmpeg -i src.mp4 -c:v copy -an des.mp4
+```
+
+音视频文件合成操作：
+
+```
+ffmpeg -i  src.mp3  -i src.mp4  des.mp4
+```
+
+视频转gif：
+
+```
+ffmpeg -i src.mp4 des.gif
+```
+
+视频转高质量gif：
+
+```
+ffmpeg -i src.mp4 -b 2048k des.gif
+```
+
+---
+
+## 操作音频
+
+音频裁剪：
+
+```
+ffmpeg -i src.mp3  -ss 00:00:00 -t 00:00:20 des.mp3 
+裁剪前20秒
+```
