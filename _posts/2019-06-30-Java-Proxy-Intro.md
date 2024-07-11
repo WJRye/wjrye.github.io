@@ -12,9 +12,9 @@ mindmap: false
 mindmap2: false
 ---
 
-## ## 动态代理
+## 动态代理
 
-### 类Proxy
+### 类 Proxy
 
 在 Java  中的动态代理，实际上指的就是反射包`java.lang.reflect`下的 类 `Proxy`。
 
@@ -168,11 +168,11 @@ com.sun.proxy.$Proxy0
 
 上面的步骤大概可以概括为：
 
-1. 生成代理类Proxy0 (指的就是cl)，Proxy0有一个构造函数，构造函数的参数是 InvocationHandler 类型。
-2. 通过反射，生成类Proxy0的一个构造器对象。
-3. 再通过反射，生成类Proxy0的一个实例对象。
+1. 生成代理类 Proxy0 (指的就是cl)，Proxy0 有一个构造函数，构造函数的参数是 InvocationHandler 类型。
+2. 通过反射，生成类 Proxy0 的一个构造器对象。
+3. 再通过反射，生成类 Proxy0 的一个实例对象。
 
-关于生成代理类Proxy0，再看下方法`getProxyClass0(loader, intfs)` :
+关于生成代理类 Proxy0，再看下方法`getProxyClass0(loader, intfs)` :
 
 ```
     /**
