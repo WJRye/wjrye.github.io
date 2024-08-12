@@ -289,23 +289,6 @@ rxjs 版本：rxjs@7.8.1
 
 时序图：
 
-```mermaid
-sequenceDiagram
-User->>View: fisrt show
-View->>ViewModel: send CityCodeInfoIntent
-ViewModel->>Model: loadCityCodeInfo
-Model->>ViewModel: return Array<CityCodeInfo>
-ViewModel->>View: update _cityCodeInfoViewState
-View->>User: display city list
-
-User->>View: first show or click city list item 
-View->>ViewModel: send CityWeatherIntent
-ViewModel->>Model: fetchWeather
-Model->>ViewModel: return Weather
-ViewModel->>View: update _cityWeatherViewState
-View->>User: display city weather
-```
-
 {% raw %}
 <div class="mermaid">
     graph TD;
