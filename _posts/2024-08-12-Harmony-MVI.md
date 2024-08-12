@@ -41,13 +41,15 @@ M-V-I 分别指的是：
 * View：负责界面展示，展示数据来源于 Model，以及响应数据变化；并接收用户操作，构建 Intent。
 * Intent：负责将用户操作或事件转换为状态变化。
 
-```mermaid
-stateDiagram-v2
-User --> Intent: 输入操作或事件
-Intent --> Model:输入变化，请求更新数据
-Model --> View:输出新数据，响应数据变化
-View --> User:展示状态
-```
+{% raw %}
+<div class="mermaid">
+    graph TD;
+    User --> Intent: 输入操作或事件;
+    Intent --> Model:输入变化，请求更新数据;
+    Model --> View:输出新数据，响应数据变化;
+    View --> User:展示状态;
+</div>
+{% endraw %}
 
 ### MVI 工作流程
 
@@ -58,15 +60,17 @@ View --> User:展示状态
 5. 数据变化：View 订阅了数据的状态，当状态发生改变，View 自动刷新。
 6. 展示状态：呈现最新状态。
 
-```mermaid
-sequenceDiagram
-User->>View: 输入操作或事件
-View->>ViewModel: 输入意图
-ViewModel->>Model: 请求数据更新
-Model->>ViewModel: 输出数据
-ViewModel->>View: 响应数据变化
-View->>User: 展示状态
-```
+{% raw %}
+<div class="mermaid">
+    graph TD;
+    User->>View: 输入操作或事件;
+    View->>ViewModel: 输入意图;
+    ViewModel->>Model: 请求数据更新;
+    Model->>ViewModel: 输出数据;
+    ViewModel->>View: 响应数据变化;
+    View->>User: 展示状态;
+</div>
+{% endraw %}
 
 工作流程反映了 MVI 架构模式关键特点：
 
@@ -301,6 +305,24 @@ Model->>ViewModel: return Weather
 ViewModel->>View: update _cityWeatherViewState
 View->>User: display city weather
 ```
+
+{% raw %}
+<div class="mermaid">
+    graph TD;
+    User->>View: fisrt show;
+    View->>ViewModel: send CityCodeInfoIntent;
+    ViewModel->>Model: loadCityCodeInfo;
+    Model->>ViewModel: return Array<CityCodeInfo>;
+    ViewModel->>View: update _cityCodeInfoViewState;
+    View->>User: display city list;
+    User->>View: first show or click city list item;
+    View->>ViewModel: send CityWeatherIntent;
+    ViewModel->>Model: fetchWeather;
+    Model->>ViewModel: return Weather;
+    ViewModel->>View: update _cityWeatherViewState;
+    View->>User: display city weather;
+</div>
+{% endraw %}
 
 #### 开始
 
