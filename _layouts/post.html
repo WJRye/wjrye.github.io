@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<script src="/assets/mermaid-8.9.2/mermaid.min.js"></script>
+{% include mermaid.html %}
 {% assign assets_base_url = site.url %}
 {% if site.cdn.jsdelivr.enabled %}
 {% assign assets_base_url = "https://fastly.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}

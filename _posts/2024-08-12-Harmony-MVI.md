@@ -42,12 +42,13 @@ M-V-I 分别指的是：
 * Intent：负责将用户操作或事件转换为状态变化。
 
 {% raw %}
+
 <div class="mermaid">
-    graph TD;
-    User --> Intent: 输入操作或事件;
-    Intent --> Model:输入变化，请求更新数据;
-    Model --> View:输出新数据，响应数据变化;
-    View --> User:展示状态;
+stateDiagram-v2
+    User --> Intent: Action;
+    Intent --> Model: Input(State);
+    Model --> View: Loaded(State);
+    View --> User: Display(State);
 </div>
 {% endraw %}
 
@@ -61,14 +62,16 @@ M-V-I 分别指的是：
 6. 展示状态：呈现最新状态。
 
 {% raw %}
+
 <div class="mermaid">
-    graph TD;
-    User->>View: 输入操作或事件;
-    View->>ViewModel: 输入意图;
-    ViewModel->>Model: 请求数据更新;
-    Model->>ViewModel: 输出数据;
-    ViewModel->>View: 响应数据变化;
-    View->>User: 展示状态;
+sequenceDiagram;
+    actor User;
+    User ->> View: 输入操作或事件;
+    View ->> ViewModel: 输入意图;
+    ViewModel ->> Model: 请求数据更新;
+    Model ->> ViewModel: 输出数据;
+    ViewModel ->> View: 响应数据变化;
+    View ->> User: 展示状态;
 </div>
 {% endraw %}
 
@@ -289,21 +292,41 @@ rxjs 版本：rxjs@7.8.1
 
 时序图：
 
+
+
+
 {% raw %}
 <div class="mermaid">
-    graph TD;
-    User->>View: fisrt show;
-    View->>ViewModel: send CityCodeInfoIntent;
-    ViewModel->>Model: loadCityCodeInfo;
-    Model->>ViewModel: return Array<CityCodeInfo>;
-    ViewModel->>View: update _cityCodeInfoViewState;
-    View->>User: display city list;
-    User->>View: first show or click city list item;
-    View->>ViewModel: send CityWeatherIntent;
-    ViewModel->>Model: fetchWeather;
-    Model->>ViewModel: return Weather;
-    ViewModel->>View: update _cityWeatherViewState;
-    View->>User: display city weather;
+sequenceDiagram;
+    actor User;
+    
+    User ->> View: fisrt show;
+    activate View;
+    View ->> ViewModel: send CityCodeInfoIntent;
+    activate ViewModel;
+    ViewModel ->> Model: loadCityCodeInfo;
+    activate Model;
+    Model ->> ViewModel: return []CityCodeInfo;
+    deactivate Model;
+    ViewModel ->> View: update _cityCodeInfoViewState;
+    deactivate ViewModel;
+    View ->> User: display city list;
+    deactivate View;
+    
+  
+    User ->> View: first show or click city list item;
+    activate View;
+    View ->> ViewModel: send CityWeatherIntent;
+    activate ViewModel;
+    ViewModel ->> Model: fetchWeather;
+    activate Model;
+    Model ->> ViewModel: return Weather;
+    deactivate Model;
+    ViewModel ->> View: update _cityWeatherViewState;
+    deactivate ViewModel;
+    View ->> User: display city weather;
+    deactivate View;
+   
 </div>
 {% endraw %}
 
