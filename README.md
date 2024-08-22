@@ -10,6 +10,7 @@
 
 最近项目：
 
+- 在鸿蒙开发中使用 MVI：[HarmonyOsMVI]([GitHub - WJRye/HarmonyOsMVI](https://github.com/WJRye/HarmonyOsMVI))
 - 在 Android 开发中使用 Python 脚本：[android-script](https://github.com/WJRye/android-script)
 - 使用 lint 做方法调用者检查：[lint_mthod_collector](https://github.com/WJRye/lint_mthod_collector)
 
@@ -23,16 +24,16 @@
         <td>
         <p> <span style="font-weight:bold;">个人成就</span>
         <ul type="circle">
-            <li>文章被点赞 134</li>
-            <li>文章被阅读 16,797</li>
-            <li>掘力值 843</li>
+            <li>文章被点赞 241</li>
+            <li>文章被阅读 28,971</li>
+            <li>掘力值 1299</li>
         </ul>
         </p>
     </td>
     <td> <a href="https://juejin.cn/user/2568903598027885/posts">稀土掘金</a> </td>
 
 </tr>
-   
+
 <tr>
         <th>
            <span style="font-weight:bold;">麦田里的守望者-Jiang</span>
@@ -51,18 +52,22 @@
 </tr></table>
 
 最近文章：
+
+* [鸿蒙 & MVI](https://juejin.cn/post/7401464779128586280)
+  
+  鸿蒙作为新的平台，项目从 0 到 1，为了让软件快速上线，又能让开发和维护容易和高效，那么直接选择 MVI 软件架构模式进行开发。
+
 * [Kotlin Multiplatform 跨平台支持鸿蒙](https://juejin.cn/post/7379059228105621556)
-   
+  
    采用 Kotlin Multiplatform 做跨平台，可以使用其逻辑代码共享能力，不仅能稳定支持移动端 Android 和 iOS 平台，还能稳定支持鸿蒙平台，这对于国内来说是天时地利。
 
 * [采用 Kotlin Multiplatform 做跨平台](https://juejin.cn/post/7375586227984711689)
-
+  
    如果是移动端架构师和基础库负责人，那么可以直接入场，做基础组件逻辑共享和部分 UI 组件  UI 共享。如果是垂直业务负责人和业务架构研发，那么也可以直接入场，做业务基础组件逻辑共享。如果是业务开发，那么可以了解，不必直接入场，但如果有浓厚兴趣，以后希望做个人产品，那么还是可以先入场的。
 
 * [你来输出技术方案](https://juejin.cn/post/7365003815508148265)
-
+  
   为了让需求顺利进行，准时保质保量交付，在需求 → 编码之间添加技术方案节点，技术方案主要做需求分析和架构设计（或技术分析）。在做完技术方案后，应该对该需求是什么，以及如何完成该需求有清晰的认识，并且接下来就能根据技术方案推进需求上线。总之，技术方案目的就是降低风险，有理有据，稳步向前的让需求落地。
-
 
 推荐文章：
 
@@ -94,4 +99,3 @@
 ![HTML](https://img.shields.io/badge/HTML-Intermediate-yellow?style=for-the-badge&logo=html5)
 ![C](https://img.shields.io/badge/C-Beginner-orange?style=for-the-badge&logo=c)
 ![KMM](https://img.shields.io/badge/KMM-Beginner-orange?style=for-the-badge&logo=kmm)
-
