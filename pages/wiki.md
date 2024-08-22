@@ -8,8 +8,10 @@ copyright: false
 menu: 知识
 permalink: /wiki/
 ---
-
-> 挟飞仙以遨游，抱明月而长终。
+<blockquote>
+        挟飞仙以遨游，抱明月而长终。
+        <cite>– 苏轼</cite>
+</blockquote>
 
 <!-- /.banner -->
 <section class="container content">
