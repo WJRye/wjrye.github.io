@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Fragments
-description: fragments 索引页
+layout: fragment
+title: 万事积于忽微，量变引起质变
+description: 
 keywords: fragments
 comments: false
 mermaid: false
@@ -9,7 +9,11 @@ menu: 片段
 permalink: /fragments/
 ---
 
-> 零散的知识，简短的观点，作为片段汇集于此。
+<blockquote>
+        故不积跬步，无以至千里；不积小流，无以成江海。骐骥一跃，不能十步；驽马十驾，功在不舍。锲而不舍，金石可镂。
+        <cite>– 荀子</cite>
+</blockquote>
+
 
 {% assign tagliststr = '' %}
 {% for item in site.fragments %}
