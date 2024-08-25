@@ -1,6 +1,6 @@
 ---
 layout: categories
-title: Categories
+title: 分类
 description: 文章类别
 keywords: 分类
 comments: false

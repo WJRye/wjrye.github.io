@@ -151,6 +151,9 @@ plugins:
     - jemoji
 #     - jekyll-mentions
 collections:
+    family:
+        output: true
+        permalink: /family/:path/
     wiki:
         output: true
         permalink: /wiki/:path/
