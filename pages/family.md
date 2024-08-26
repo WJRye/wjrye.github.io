@@ -7,14 +7,17 @@ comments: false
 menu: 家庭
 permalink: /family/
 ---
-
-> 聊乘化以归尽，乐夫天命复奚疑。
+<blockquote>
+        聊乘化以归尽，乐夫天命复奚疑。
+        <cite>– 陶渊明</cite>
+</blockquote>
 
 <section class="container content">
     <div class="columns">
         <div class="column" >
             <ol class="repo-list">
-              {% for post in site.family %}
+              {% assign sorted = site.family | sort: 'date' | reverse  %}
+              {% for post in sorted %}
               {% if post.title != "Family Template"%}
               <li class="repo-list-item">
                 <h3 class="repo-list-name">
