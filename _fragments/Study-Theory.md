@@ -1,7 +1,7 @@
 ---
 layout: fragment
 title: 学习金字塔
-tags: []
+tags: [个人成长]
 description: 
 keywords: 
 mermaid: false
