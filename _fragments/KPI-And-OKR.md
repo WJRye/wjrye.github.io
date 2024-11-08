@@ -1,6 +1,6 @@
 ---
 layout: fragment
-title: KPI&OKR
+title: KPI & OKR
 tags: [KPI,OKR]
 description: 
 keywords: 
