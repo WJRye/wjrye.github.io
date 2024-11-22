@@ -9,12 +9,6 @@ menu: 片段
 permalink: /fragments/
 ---
 
-<blockquote>
-        故不积跬步，无以至千里；不积小流，无以成江海。骐骥一跃，不能十步；驽马十驾，功在不舍。锲而不舍，金石可镂。
-        <cite>– 荀子</cite>
-</blockquote>
-
-
 {% assign tagliststr = '' %}
 {% for item in site.fragments %}
 {% if item.title != "Fragment Template" %}
