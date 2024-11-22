@@ -233,15 +233,49 @@ public interface DeviceInfo {
 
 通过 `expect` 和 `actual` 声明机制可以访问不同平台的原生 API。但这种机制的具体实现依赖于Kotlin 语言与其它语言的互操作性。
 
+<table>
+  <thead>
+    <tr>
+      <th>平台（部署）</th>
+      <th>语言</th>
+      <th>互操作性</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Android</td>
+      <td>Kotlin ↔️ Java</td>
+      <td>Kotlin 在设计时就考虑了 Java 互操作性。可以从 Kotlin 中自然地调用现存的 Java 代码，并且在 Java 代码中也可以很顺利地调用 Kotlin 代码。</td>
+    </tr>
+    <tr>
+      <td>iOS</td>
+      <td>Kotlin ↔️ C/C++<br>Kotlin ↔️ Swift/Objective-C</td>
+      <td>POSIX、 gzip、 OpenGL、 Metal、 Foundation 以及许多其他流行库与 Apple 框架都已预先导入并作为 Kotlin/Native 库包含在编译器包中。</td>
+    </tr>
+    <tr>
+      <td>Desktop(JVM)</td>
+      <td>Kotlin ↔️ Java</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Server-side(JVM)</td>
+      <td>Kotlin ↔️ Java</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Web based on Kotlin/Wasm</td>
+      <td>Kotlin ↔️ JS<br>Kotlin ↔️ C/C++</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Web based on Kotlin/JS</td>
+      <td>Kotlin ↔️ JS</td>
+      <td>Kotlin/JS 提供了转换 Kotlin 代码、Kotlin 标准库的能力，并且兼容 JavaScript 的任何依赖项。Kotlin/JS 的当前实现以 <a herf="https://www.ecma-international.org/ecma-262/5.6/">ES5</a>为目标。</td>
+    </tr>
+  </tbody>
+</table>
 
-| 平台（部署） | 语言 | 互操作性 |
-| --- | --- | --- |
-|  Android |  Kotlin &lrarr; Java| <blockquote>Kotlin 在设计时就考虑了 Java 互操作性。可以从 Kotlin 中自然地调用现存的 Java 代码，并且在 Java 代码中也可以很顺利地调用 Kotlin 代码。</blockquote>|
-|  iOS | Kotlin &lrarr; C/C++ </br>Kotlin &lrarr; Swift/Objective-C | <blockquote>POSIX、 gzip、 OpenGL、 Metal、 Foundation 以及许多其他流行库与 Apple 框架都已预先导入并作为 Kotlin/Native 库包含在编译器包中。</blockquote>|
-|  Desktop(JVM) | Kotlin &lrarr; Java | |
-|  Server-side(JVM) | Kotlin &lrarr; Java | |
-| Web based on Kotlin/Wasm|  Kotlin &lrarr; JS </br> Kotlin &lrarr; C/C++| |
-| Web based on Kotlin/JS| Kotlin &lrarr; JS | <blockquote>Kotlin/JS 提供了转换 Kotlin 代码、Kotlin 标准库的能力，并且兼容 JavaScript 的任何依赖项。Kotlin/JS 的当前实现以 [ES5](https://www.ecma-international.org/ecma-262/5.1/) 为目标。</blockquote> |
+
 
 Kotlin 语言与 Java 语言具有无缝互操作性，与 C/C++ 和 Swift/Objective-C 语言具有一定程度上的互操作性，与 JavaScript 语言具有很大程度上的互操作性。
 
