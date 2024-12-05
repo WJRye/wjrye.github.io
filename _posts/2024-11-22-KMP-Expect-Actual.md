@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KMP 中的 expect 和 actual 声明
+title: Kotlin Multiplatform 访问各平台特性
 categories: [Kotlin]
 description: 在KMP项目中，使用 expect 和 actual 声明机制访问不同平台特性。KMP跨平台的能力，通过编译目标来实现：Kotlin/JVM，Kotlin/Native，Kotlin/JS。
 keywords: expect, actual
