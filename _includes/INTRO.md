@@ -16,42 +16,16 @@
 
 ### Blog
 
-<table style="width: 100%; border-collapse: collapse;">
-    <tr>
-        <th>
-                <span style="font-weight:bold;">划水健儿</span>
-        </th>
-        <td>
-        <p> <span style="font-weight:bold;">个人成就</span>
-        <ul type="circle">
-            <li>文章被点赞 241</li>
-            <li>文章被阅读 28,971</li>
-            <li>掘力值 1299</li>
-        </ul>
-        </p>
-    </td>
-    <td> <a href="https://juejin.cn/user/2568903598027885/posts">稀土掘金</a> </td>
+稀土掘金：[划水健儿](https://juejin.cn/user/2568903598027885/posts)
 
-</tr>
+CSDN：[麦田里的守望者-Jiang](https://blog.csdn.net/wangjiang_qianmo?type=blog)
 
-<tr>
-        <th>
-           <span style="font-weight:bold;">麦田里的守望者-Jiang</span>
-        </th>
-    <td>
-        <p> <span style="font-weight:bold;">个人成就</span>
-        <ul type="circle">
-            <li>获得 226 次点赞</li>
-            <li>内容获得 91 次评论</li>
-            <li>获得 811 次收藏</li>
-            <li>代码片获得 288 次分享</li>
-        </ul>
-        </p>
-    </td>
-    <td> <a href="https://blog.csdn.net/wangjiang_qianmo?type=blog">CSDN</a></td>
-</tr></table>
 
 最近文章：
+
+* [Kotlin Multiplatform 封装鸿蒙 API](https://juejin.cn/post/7444562650917142528)
+  
+  将鸿蒙API的 .d.ts 文件导出，使用 Dukat 或 Karakum 将 .d.ts 文件转换为 .kt 文件，在 KMP 项目中导入 .kt 文件，此时就可以是使用 expect 和 actual 访问鸿蒙平台特性。
 
 * [鸿蒙 & MVI](https://juejin.cn/post/7401464779128586280)
   
@@ -98,5 +72,6 @@
 ![Python](https://img.shields.io/badge/Python-Intermediate-yellow?style=for-the-badge&logo=python)
 ![HTML](https://img.shields.io/badge/HTML-Intermediate-yellow?style=for-the-badge&logo=html5)
 ![C](https://img.shields.io/badge/C-Beginner-orange?style=for-the-badge&logo=c)
-![KMM](https://img.shields.io/badge/KMM-Beginner-orange?style=for-the-badge&logo=kmm)
+![KMP](https://img.shields.io/badge/KMP-Beginner-orange?style=for-the-badge&logo=kmp)
+
 
