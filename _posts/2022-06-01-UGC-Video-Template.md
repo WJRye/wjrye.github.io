@@ -410,7 +410,7 @@ end
 1. 原业务中使用了 Map 数据存储。
 2. 在本地和 CI/CD 构建时，能正确依赖 proto 仓库的 java 产物。
 
-适配 Map 数据存储流程图：
+适配 Map 数据存储流程图（lint 插件源码：https://github.com/WJRye/lint_mthod_collector.git）：
 ```mermaid
 graph TB
  %% 定义样式
