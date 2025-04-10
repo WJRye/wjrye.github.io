@@ -2,7 +2,7 @@
 layout: post
 title: 鸿蒙 & KMP 上传文件
 categories: [Architect, Harmony]
-description: some word here
+description: 鸿蒙平台支持文件上传，多方业务可以直接使用，并制定出 KMP 上传文件逻辑共用雏形。
 keywords: Harmony
 mermaid: true
 sequence: false
