@@ -64,14 +64,15 @@ CSDN：[麦田里的守望者-Jiang](https://blog.csdn.net/wangjiang_qianmo?type
 
 ### 技术栈
 
-![Android](https://img.shields.io/badge/Android-Expert-green?style=for-the-badge&logo=android)
+![Android](https://img.shields.io/badge/Android-Advanced-green?style=for-the-badge&logo=android)
 ![Kotlin](https://img.shields.io/badge/Kotlin-Advanced-blue?style=for-the-badge&logo=kotlin)
 ![Java](https://img.shields.io/badge/Java-Advanced-blue?style=for-the-badge&logo=java)
 ![Git](https://img.shields.io/badge/Git-Advanced-blue?style=for-the-badge&logo=git)
 ![Gradle](https://img.shields.io/badge/Gradle-Advanced-blue?style=for-the-badge&logo=gradle)
 ![Python](https://img.shields.io/badge/Python-Intermediate-yellow?style=for-the-badge&logo=python)
 ![HTML](https://img.shields.io/badge/HTML-Intermediate-yellow?style=for-the-badge&logo=html5)
-![C](https://img.shields.io/badge/C-Beginner-orange?style=for-the-badge&logo=c)
+![C++](https://img.shields.io/badge/C++-Beginner-orange?style=for-the-badge&logo=c++)
 ![KMP](https://img.shields.io/badge/KMP-Beginner-orange?style=for-the-badge&logo=kmp)
+![Harmony](https://img.shields.io/badge/Harmony-Beginner-orange?style=for-the-badge&logo=arkts)
 
 
