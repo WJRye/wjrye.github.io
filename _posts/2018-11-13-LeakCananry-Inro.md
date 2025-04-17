@@ -487,7 +487,7 @@ HeapAnalyzer就是最开始说的：
  
  分析完成之后，将分析结果封装成AnalysisResult对象。最后交给AbstractAnalysisResultService的子类DisplayLeakService来处理结果，DisplayLeakService主要用来显示通知，展示在用户面前。就此，内存泄漏分析完成。
  
- ## 总结
+## 总结
  
  LeakCanary用到的最主要的知识点就是垃圾回收器的可达性分析算法：当一个对象到GC Roots 没有任何引用链相连时，则证明此对象是不可用的。
  
