@@ -4,7 +4,7 @@ title: 鸿蒙 & MVI
 categories: [Harmony]
 description: 在鸿蒙开发中，通过响应式编 rxjs 和 状态管理@State, @Observed, @Watch 装饰器即可实现简单的 MVI 架构模式。
 keywords: 鸿蒙, MVI
-mermaid: false
+mermaid: true
 sequence: false
 flow: false
 mathjax: false
@@ -41,16 +41,15 @@ M-V-I 分别指的是：
 * View：负责界面展示，展示数据来源于 Model，以及响应数据变化；并接收用户操作，构建 Intent。
 * Intent：负责将用户操作或事件转换为状态变化。
 
-{% raw %}
 
-<div class="mermaid">
+```mermaid
+%%{ init : { "theme": "forest" } }%%
 stateDiagram-v2
-    User --> Intent: Action;
-    Intent --> Model: Input(State);
-    Model --> View: Loaded(State);
-    View --> User: Display(State);
-</div>
-{% endraw %}
+    User --> Intent: Action
+    Intent --> Model: Input(State)
+    Model --> View: Loaded(State)
+    View --> User: Display(State)
+```
 
 ### MVI 工作流程
 
@@ -61,19 +60,17 @@ stateDiagram-v2
 5. 数据变化：View 订阅了数据的状态，当状态发生改变，View 自动刷新。
 6. 展示状态：呈现最新状态。
 
-{% raw %}
-
-<div class="mermaid">
+```mermaid
+%%{ init : { "theme": "forest" } }%%
 sequenceDiagram;
-    actor User;
-    User ->> View: 输入操作或事件;
-    View ->> ViewModel: 输入意图;
-    ViewModel ->> Model: 请求数据更新;
-    Model ->> ViewModel: 输出数据;
-    ViewModel ->> View: 响应数据变化;
-    View ->> User: 展示状态;
-</div>
-{% endraw %}
+    actor User
+    User ->> View: 输入操作或事件
+    View ->> ViewModel: 输入意图
+    ViewModel ->> Model: 请求数据更新
+    Model ->> ViewModel: 输出数据
+    ViewModel ->> View: 响应数据变化
+    View ->> User: 展示状态
+```
 
 工作流程反映了 MVI 架构模式关键特点：
 
@@ -293,11 +290,9 @@ rxjs 版本：rxjs@7.8.1
 时序图：
 
 
-
-
-{% raw %}
-<div class="mermaid">
-sequenceDiagram;
+```mermaid
+%%{ init : { "theme": "forest" } }%%
+sequenceDiagram
     actor User;
     
     User ->> View: fisrt show;
@@ -326,9 +321,7 @@ sequenceDiagram;
     deactivate ViewModel;
     View ->> User: display city weather;
     deactivate View;
-   
-</div>
-{% endraw %}
+```
 
 #### 开始
 
@@ -823,3 +816,13 @@ MVI 架构模式作为 Android 推崇架构模式，它带来的主要好处是�
 在鸿蒙开发中，通过响应式编 rxjs 和 状态管理@State, @Observed, @Watch 装饰器即可实现简单的 MVI 架构模式。
 
 在鸿蒙开发中，使用 MVI，能够顺利进行大量的常规需求快速开发，能够让其他开发人员快速参与进来，并能够保障项目的线上质量和稳定。
+
+
+<img src="{{site.url}}/images/posts/2024-08-12-Harmony-MVI/p0.jpg" width="50%" height="50%"
+     style="border-radius:12px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.15);
+            border:1px solid rgba(0,0,0,0.05);
+            transition:transform 0.3s ease, box-shadow 0.3s ease;
+            display:block;
+            max-width:100%;
+            height:auto;"/>
