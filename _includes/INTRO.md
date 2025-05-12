@@ -1,8 +1,8 @@
 ## Hi，我是王江 ![Android Developer](https://img.shields.io/badge/Android_Developer-green?style=flat&logo=android)
 
-* No pains, No gains.
+* No pains, no gains.
 * Pain is inevitable. Suffering is optional.
-* 任何一把剃刀都自有其哲学
+* 芝兰生于深谷，不以无人而不芳。君子修身养德，不以穷困而改志。
 
 ### GitHub
 
@@ -23,6 +23,10 @@ CSDN：[麦田里的守望者-Jiang](https://blog.csdn.net/wangjiang_qianmo?type
 
 最近文章：
 
+* [Kotlin/Native 给鸿蒙使用（二）](https://juejin.cn/post/7480538156530925578)
+
+  在Kotlin/Native中，利用Kotlin与C语言的互操作性，以及提供的 cinterop工具，不仅能访问鸿蒙平台的Native能力，而且还能直接生成符合 Node-API 规范的 `.so`。
+
 * [Kotlin Multiplatform 封装鸿蒙 API](https://juejin.cn/post/7444562650917142528)
   
   将鸿蒙API的 .d.ts 文件导出，使用 Dukat 或 Karakum 将 .d.ts 文件转换为 .kt 文件，在 KMP 项目中导入 .kt 文件，此时就可以是使用 expect 和 actual 访问鸿蒙平台特性。
@@ -30,10 +34,6 @@ CSDN：[麦田里的守望者-Jiang](https://blog.csdn.net/wangjiang_qianmo?type
 * [鸿蒙 & MVI](https://juejin.cn/post/7401464779128586280)
   
   鸿蒙作为新的平台，项目从 0 到 1，为了让软件快速上线，又能让开发和维护容易和高效，那么直接选择 MVI 软件架构模式进行开发。
-
-* [Kotlin Multiplatform 跨平台支持鸿蒙](https://juejin.cn/post/7379059228105621556)
-  
-   采用 Kotlin Multiplatform 做跨平台，可以使用其逻辑代码共享能力，不仅能稳定支持移动端 Android 和 iOS 平台，还能稳定支持鸿蒙平台，这对于国内来说是天时地利。
 
 * [采用 Kotlin Multiplatform 做跨平台](https://juejin.cn/post/7375586227984711689)
   
@@ -45,13 +45,13 @@ CSDN：[麦田里的守望者-Jiang](https://blog.csdn.net/wangjiang_qianmo?type
 
 推荐文章：
 
+1. [软件开发中的架构设计](https://juejin.cn/post/7396523906277097481)
+
 1. [Gitlab CI/CD 简单介绍](https://juejin.cn/post/7236523661707624507)
 
 2. [Kotlin Flow 冷流和热流](https://juejin.cn/post/7217601930917969957)
 
 3. [Kotlin Flow 探索](https://juejin.cn/post/7187586519534829623)
-
-4. [Kotlin 协程探索](https://juejin.cn/post/7184628421010391095)
 
 5. [客户端与服务端数据加密传输方案](https://juejin.cn/post/7146386827522342948)
 
@@ -59,7 +59,7 @@ CSDN：[麦田里的守望者-Jiang](https://blog.csdn.net/wangjiang_qianmo?type
 
 - 工作：Android 应用程序开发，从事问题定义 → 需求分析 → 架构设计 → 构建 → 测试 → 改进
 - 运动：跑步、游泳、健身、徒步
-- 阅读：村上春树（Haruki Murakami）、陀思妥耶夫斯基（Fyodor Dostoevsky）、莫言、余华、威廉·萨默塞特·毛姆（William Somerset Maugham)、斯蒂芬·茨威格（Stefan Zweig）、海明威（Ernest Hemingway）
+- 阅读：村上春树（Haruki Murakami）、陀思妥耶夫斯基（Fyodor Dostoevsky）、莫言、余华、斯蒂芬·茨威格（Stefan Zweig）
 - 纪录片：玄奘之路、河西走廊、大明宫、风云战国之列国、千古风流人物
 
 ### 技术栈
