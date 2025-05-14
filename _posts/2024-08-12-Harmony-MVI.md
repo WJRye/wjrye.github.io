@@ -61,8 +61,8 @@ stateDiagram-v2
 6. 展示状态：呈现最新状态。
 
 ```mermaid
-%%{ init : { "theme": "forest" } }%%
-sequenceDiagram;
+%%{init: {"theme": "forest"}}%%
+sequenceDiagram
     actor User
     User ->> View: 输入操作或事件
     View ->> ViewModel: 输入意图
@@ -291,36 +291,35 @@ rxjs 版本：rxjs@7.8.1
 
 
 ```mermaid
-%%{ init : { "theme": "forest" } }%%
+%%{init: {"theme": "forest"}}%%
 sequenceDiagram
-    actor User;
+    actor User
     
-    User ->> View: fisrt show;
-    activate View;
-    View ->> ViewModel: send CityCodeInfoIntent;
-    activate ViewModel;
-    ViewModel ->> Model: loadCityCodeInfo;
-    activate Model;
-    Model ->> ViewModel: return []CityCodeInfo;
-    deactivate Model;
-    ViewModel ->> View: update _cityCodeInfoViewState;
-    deactivate ViewModel;
-    View ->> User: display city list;
-    deactivate View;
-    
-  
-    User ->> View: first show or click city list item;
-    activate View;
-    View ->> ViewModel: send CityWeatherIntent;
-    activate ViewModel;
-    ViewModel ->> Model: fetchWeather;
-    activate Model;
-    Model ->> ViewModel: return Weather;
-    deactivate Model;
-    ViewModel ->> View: update _cityWeatherViewState;
-    deactivate ViewModel;
-    View ->> User: display city weather;
-    deactivate View;
+    User ->> View: first show
+    activate View
+    View ->> ViewModel: send CityCodeInfoIntent
+    activate ViewModel
+    ViewModel ->> Model: loadCityCodeInfo
+    activate Model
+    Model ->> ViewModel: return []CityCodeInfo
+    deactivate Model
+    ViewModel ->> View: update _cityCodeInfoViewState
+    deactivate ViewModel
+    View ->> User: display city list
+    deactivate View
+
+    User ->> View: first show or click city list item
+    activate View
+    View ->> ViewModel: send CityWeatherIntent
+    activate ViewModel
+    ViewModel ->> Model: fetchWeather
+    activate Model
+    Model ->> ViewModel: return Weather
+    deactivate Model
+    ViewModel ->> View: update _cityWeatherViewState
+    deactivate ViewModel
+    View ->> User: display city weather
+    deactivate View
 ```
 
 #### 开始
