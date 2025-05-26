@@ -1,20 +1,23 @@
-## Hi，我是王江 ![Android Developer](https://img.shields.io/badge/Android_Developer-green?style=flat&logo=android)
+## 你好，我是王江 ![Android Developer](https://img.shields.io/badge/Android-Developer-3DDC84?style=flat-square&logo=android&logoColor=white)
+
 
 * No pains, no gains.
 * Pain is inevitable. Suffering is optional.
-* 芝兰生于深谷，不以无人而不芳。君子修身养德，不以穷困而改志。
+* 屡败屡战。
 
 ### GitHub
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=WJRye&bg_color=30,C2FFD8,465EFB&title_color=fff&text_color=fff)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=WJRye&show_icons=true&theme=dark&title_color=8be9fd&text_color=f8f8f2&icon_color=bd93f9&bg_color=2e3440)
+
 
 最近项目：
 
+- Chrome 插件：[Markdown Exporter](https://chromewebstore.google.com/detail/markdown-exporter/nfopdpphghcihgagndbaphdpjfejecec)
 - 在鸿蒙开发中使用 MVI：[HarmonyOsMVI]([GitHub - WJRye/HarmonyOsMVI](https://github.com/WJRye/HarmonyOsMVI))
 - 在 Android 开发中使用 Python 脚本：[android-script](https://github.com/WJRye/android-script)
 - 使用 lint 做方法调用者检查：[lint_mthod_collector](https://github.com/WJRye/lint_mthod_collector)
 
-### Blog
+### 博客
 
 稀土掘金：[划水健儿](https://juejin.cn/user/2568903598027885/posts)
 
@@ -55,7 +58,7 @@ CSDN：[麦田里的守望者-Jiang](https://blog.csdn.net/wangjiang_qianmo?type
 
 5. [客户端与服务端数据加密传输方案](https://juejin.cn/post/7146386827522342948)
 
-### About:
+### 关于:
 
 - 工作：Android 应用程序开发，从事问题定义 → 需求分析 → 架构设计 → 构建 → 测试 → 改进
 - 运动：跑步、游泳、健身、徒步
@@ -66,13 +69,13 @@ CSDN：[麦田里的守望者-Jiang](https://blog.csdn.net/wangjiang_qianmo?type
 
 ![Android](https://img.shields.io/badge/Android-Advanced-green?style=for-the-badge&logo=android)
 ![Kotlin](https://img.shields.io/badge/Kotlin-Advanced-blue?style=for-the-badge&logo=kotlin)
-![Java](https://img.shields.io/badge/Java-Advanced-blue?style=for-the-badge&logo=java)
+![Java](https://img.shields.io/badge/Java-Advanced-blue?style=for-the-badge&logo=openjdk)
 ![Git](https://img.shields.io/badge/Git-Advanced-blue?style=for-the-badge&logo=git)
 ![Gradle](https://img.shields.io/badge/Gradle-Advanced-blue?style=for-the-badge&logo=gradle)
 ![Python](https://img.shields.io/badge/Python-Intermediate-yellow?style=for-the-badge&logo=python)
 ![HTML](https://img.shields.io/badge/HTML-Intermediate-yellow?style=for-the-badge&logo=html5)
-![C++](https://img.shields.io/badge/C++-Beginner-orange?style=for-the-badge&logo=c++)
-![KMP](https://img.shields.io/badge/KMP-Beginner-orange?style=for-the-badge&logo=kmp)
-![Harmony](https://img.shields.io/badge/Harmony-Beginner-orange?style=for-the-badge&logo=arkts)
+![C++](https://img.shields.io/badge/C++-Beginner-orange?style=for-the-badge&logo=cplusplus)
+![KMP](https://img.shields.io/badge/KMP-Beginner-orange?style=for-the-badge&logo=kotlin)
+![Harmony](https://img.shields.io/badge/Harmony-Beginner-orange?style=for-the-badge&logo=huawei)
 
 
