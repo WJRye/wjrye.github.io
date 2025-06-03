@@ -13,9 +13,9 @@
 最近项目：
 
 - Chrome 插件：[Markdown Exporter](https://chromewebstore.google.com/detail/markdown-exporter/nfopdpphghcihgagndbaphdpjfejecec)
-- 在鸿蒙开发中使用 MVI：[HarmonyOsMVI]([GitHub - WJRye/HarmonyOsMVI](https://github.com/WJRye/HarmonyOsMVI))
+- 在鸿蒙开发中使用 MVI：[HarmonyOsMVI](https://github.com/WJRye/HarmonyOsMVI)
 - 在 Android 开发中使用 Python 脚本：[android-script](https://github.com/WJRye/android-script)
-- 使用 lint 做方法调用者检查：[lint_mthod_collector](https://github.com/WJRye/lint_mthod_collector)
+- 使用 lint 做方法调用者检查：[lint_method_collector](https://github.com/WJRye/lint_mthod_collector)
 
 ### 博客
 
