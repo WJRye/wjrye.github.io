@@ -669,17 +669,16 @@ public @interface Override {
 
 **28.线程的生命周期**
 
-新建 &rarr; 就绪 &rlarr;（阻塞) &rlarr; 运行 &rarr; 死亡
 
-**新建**：当创建Thread类的一个实例（对象）时，此线程进入新建状态（未被启动）。例如：Thread  t1=new Thread();
+| 状态                 | 含义                                     | 典型触发方法/场景                                               |
+| ------------------ | -------------------------------------- | ------------------------------------------------------- |
+| **NEW**            | 线程对象已创建，但未调用 `start()`                 | `Thread t = new Thread()`                               |
+| **RUNNABLE**       | 可运行状态：已调用 `start()`，正在等待 CPU 时间片，或正在运行 | `t.start()` 后                                           |
+| **BLOCKED**        | 被 synchronized 锁阻塞，等待获取锁               | 进入同步块失败：`synchronized`                                  |
+| **WAITING**        | 无限期等待，被动等待某个条件触发                       | `wait()`、`join()`（无超时）、`LockSupport.park()`             |
+| **TIMED\_WAITING** | 有限时间等待，超时后自动恢复                         | `sleep()`、`wait(timeout)`、`join(timeout)`、`parkNanos()` |
+| **TERMINATED**     | 线程已运行结束（正常或异常）                         | `run()` 执行完毕 或 异常中止                                     |
 
-**就绪**：线程已经被启动，正在等待被分配给CPU时间片，也就是说此时线程正在就绪队列中排队等候得到CPU资源。例如：t1.start();
-
-**运行**：线程获得CPU资源正在执行任务（run()方法），此时除非此线程自动放弃CPU资源或者有优先级更高的线程进入，线程将一直运行到结束。
-
-**死亡**：当线程执行完毕或被其它线程杀死，线程就进入死亡状态，这时线程不可能再进入就绪状态等待执行。自然终止：正常运行run()方法后终止；异常终止：调用stop()方法让一个线程终止运行。
-
-**阻塞**：由于某种原因导致正在运行的线程让出CPU并暂停自己的执行，即进入堵塞状态。正在睡眠：用sleep(long t) 方法可使线程进入睡眠方式。一个睡眠着的线程在指定的时间过去可进入就绪状态；正在等待：调用wait()方法。（调用motify()方法回到就绪状态）；被另一个线程所阻塞：调用suspend()方法。（调用resume()方法恢复）。
 
 **29. 为什么成员内部类可以直接访问外部类的成员？Java 1.8 之前为什么方法内部类和匿名内部类访问局部变量和形参时必须加 final？**
 
@@ -830,10 +829,10 @@ Activity A 只会进入onPause 状态。
 **Activity**：
 
 - Activity &rarr; startActivity &rarr; startActivityForResult &rarr;  
-- Instrumentation &rarr; exeStartActivity &rarr; 
-- ActivityMangerService &rarr; startActivity &rarr; 
+- Instrumentation &rarr; execStartActivity &rarr; ActivityTaskManagerService(extends IActivityTaskManager.Stub)
+- ActivityMangerService(extends IActivityManager.Stub) &rarr; startActivity &rarr; 
 - ActivityStackSupervisor &rarr; ActivityStack &rarr; 
-- ApplicationThread &rarr; scheduleLaunchActivity &rarr; 
+- ApplicationThread(extends IApplicationThread.Stub) &rarr; scheduleLaunchActivity &rarr; 
 - ActivityThread  &rarr; handleLaunchActivity &rarr; performLaunchActivity 
 
 performLaunchActivity这个方法主要完成的事情：
@@ -852,7 +851,7 @@ Activity的启动模式存储在：ActivityRecord
 
 注册：
 
-- Context &rarr; registerReceiver &rarr; ContextImpl &rarr; registerReceiver &rarr; registerReceiverInner &rarr; (BroadcastReceiver &rarr; ReceiverDispather.InnerReceiver) &rarr;
+- Context &rarr; registerReceiver &rarr; ContextImpl &rarr; registerReceiver &rarr; registerReceiverInner &rarr; (BroadcastReceiver &rarr; ReceiverDispather.InnerReceiver(extends IIntentReceiver.Stub)) &rarr;
 
 - ActivityMangerService  &rarr; registerReceiver &rarr;  （把远程的 InnerReceiver 和 IntentFilter 对象存储起来）
   

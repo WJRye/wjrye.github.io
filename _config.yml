@@ -97,11 +97,12 @@ navs:
   -
     href: /family/
     label: 家庭
-    mobile-hidden: true
+    mobile-hidden: false
 
   -
     href: /like/
     label: 喜好
+    mobile-hidden: true
 
   -
     href: /about/
