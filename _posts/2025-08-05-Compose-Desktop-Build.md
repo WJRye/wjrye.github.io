@@ -75,22 +75,24 @@ kotlin {
 ```kotlin
 kotlin {
     jvmToolchain(17)
+    jvm("desktop")
 
     sourceSets {
-        commonMain.dependencies {
-            
-        }
+
     }
-    //Mac
-    listOf(macosArm64(), macosX64()).forEach { _ ->
+    macosArm64 {
         dependencies {
-            commonMainImplementation(libs.skiko.macos)
+            commonMainImplementation(libs.skiko.macos.arm64)
         }
     }
-    //Win
+    macosX64 {
+        dependencies {
+            commonMainImplementation(libs.skiko.macos.x64)
+        }
+    }
     mingwX64 {
         dependencies {
-            commonMainImplementation(libs.skiko.win)
+            commonMainImplementation(libs.skiko.win.x64)
         }
     }
 }
